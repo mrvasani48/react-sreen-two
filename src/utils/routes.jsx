@@ -6,6 +6,10 @@ const LoadingScreen = lazy(() => import('pages/LoadingScreen'))
 
 /*    Study Material    */
 const StudyMaterialScreen = lazy(() => import('pages/StudyMaterialScreen'))
+
+/*    Study Material    */
+const StaffDetailsScreen = lazy(() => import('pages/StaffDetailsScreen'))
+
 export const routes = [
     
     {
@@ -23,6 +27,15 @@ export const routes = [
             {
                 index: true,
                 element: <StudyMaterialScreen />
+            }
+        ]
+    },
+    {
+        path: '/staff-details',
+        children : [
+            {
+                index: true,
+                element: <StaffDetailsScreen />
             }
         ]
     },
